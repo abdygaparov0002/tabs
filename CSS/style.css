@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+body {
+    background: linear-gradient(40deg, red, cornflowerblue, purple);
+    min-height: 100vh;
+
+}
+.tabs {
+    margin: 60px 0;
+    border-radius: 15px;
+    background: linear-gradient(rgba(114, 114, 114, 0.7),white);
+}
+.label-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 0;
+    background: rgba(129, 126, 126, 0.49);
+    border-radius: 12px;
+    padding: 20px 0;
+}
+.label-tabs label {
+    padding: 10px 30px;
+    background: rgba(3, 3, 3, 0.75);
+    background: linear-gradient(rgba(10, 10, 10, 0.56),white);
+    border-radius: 15px;
+    color: black;
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    transition:.4s;
+}
+.label-tabs label:hover {
+    background: transparent;
+    border: 2px solid black;
+
+}
+
+.tabs input {
+    display: none;
+}
+.tabs img {
+    width: 220px;
+    height: 230px;
+    object-fit: cover;
+    margin: 40px 30px;
+}
+#html:checked ~ .css,
+#html:checked ~ .js,
+#html:checked ~ .ts {
+   opacity: 0.1;
+    transition: .4s;
+}
+#css:checked ~ .html,
+#css:checked ~ .js,
+#css:checked ~ .ts {
+    opacity: 0.1;
+    transition: .4s;
+}
+#js:checked ~ .html,
+#js:checked ~ .css,
+#js:checked ~ .ts {
+    opacity: 0.1;
+    transition: .4s;
+}
+#ts:checked ~ .html,
+#ts:checked ~ .css,
+#ts:checked ~ .js {
+    opacity: 0.1;
+    transition: .4s;
+}
+
+
